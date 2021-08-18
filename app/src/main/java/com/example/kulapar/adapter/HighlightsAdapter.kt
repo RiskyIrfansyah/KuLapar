@@ -9,10 +9,6 @@ import com.example.kulapar.R
 import com.example.kulapar.model.ModelHighlights
 import kotlinx.android.synthetic.main.list_item_highlights.view.*
 
-/**
- * Created by Azhar Rivaldi on 17-09-2020
- */
-
 class HighlightsAdapter (
 
     private val items: List<ModelHighlights>) : RecyclerView.Adapter<HighlightsAdapter.ViewHolder>() {

@@ -13,10 +13,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import kotlinx.android.synthetic.main.list_item_main_horizontal.view.*
 
-/**
- * Created by Azhar Rivaldi on 15-09-2020
- */
-
 class MainAdapterHorizontal (
 
     private val mContext: Context, private val items: List<ModelMainHorizontal>)
