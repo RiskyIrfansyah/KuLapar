@@ -18,10 +18,6 @@ import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import kotlinx.android.synthetic.main.list_item_main.view.*
 
-/**
- * Created by Azhar Rivaldi on 16-09-2020
- */
-
 class MainAdapter (
 
     private val mContext: Context, private val items: List<ModelMain>) : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
