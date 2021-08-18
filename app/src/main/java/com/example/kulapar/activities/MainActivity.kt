@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
         val locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
         val criteria = Criteria()
         val provider = locationManager.getBestProvider(criteria, true)
-        val location = locationManager.getLastKnownLocation(provider)
+        val location = locationManager.getLastKnownLocation(provider.toString())
 
         if (location != null) {
             onLocationChanged(location)
@@ -147,7 +147,7 @@ class MainActivity : AppCompatActivity(), LocationListener {
             getListResto()
 
         } else {
-            locationManager.requestLocationUpdates(provider, 20000, 0f, this)
+            locationManager.requestLocationUpdates(provider.toString(), 20000, 0f, this)
         }
     }
 
